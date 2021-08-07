@@ -1,0 +1,218 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+:host(app-plan) {
+    flex: 1;
+
+	.plan-container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+
+		h1 {
+			color: rgb(187, 98, 56);
+			text-shadow: 2px 2px black;
+		}
+
+		.tables-container {
+			> * + * {
+				margin-left: 30px;
+              
+			}
+		}
+
+		.city-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			height: 70%;
+			align-items: center;
+
+			.tables-container {
+				display: flex;
+				flex-direction: row;
+			}
+		}
+
+		.beach-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			height: 30%;
+			align-items: center;
+
+			.tables-container {
+				display: flex;
+				flex-direction: row;
+                
+			}
+		}
+	}
+}
+@media (max-width: 800px) {
+	.first, .second, .third, .fourth {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: auto;
+		align-items:flex-start;
+		
+	}
+}	
+//     flex: 1;
+  
+//     .homepage-container {
+//       height: 100%;
+//       display: flex;
+//       flex-direction: row;
+//       align-items: center;
+//       justify-content: center;
+  
+//       .reservation-plan {
+//         height: 700px;
+//         width: 1000px;
+//         border: 2px black solid;
+//         border-radius: 10px;
+//         display: flex;
+//         background-color: rgb(54, 53, 53);
+//         opacity: 0.7;
+//         flex-direction: row;
+//         justify-content: center;
+//         align-items: center;
+  
+//         h1 {
+//           color: black;
+//           font-size: 30px;
+//         }
+
+//         .table-container{
+//             display: flex;
+//             flex-direction: column;
+//         }
+
+//         .table{
+            
+//             border: 2px black solid;
+//             background-color: gray;
+//             margin: 35px;
+//             margin-bottom: 60px;
+//             border-radius: 15px;
+
+            
+
+            
+//         }
+//         .table.occupied{
+//             background-color: red;
+//         }
+
+//         .table:not(.occupied):hover{
+//             cursor: pointer;
+//             transform: scale(1.5);
+        
+//         }
+//         .table.selected{
+//             background-color: #6feaf6;
+        
+//         }
+           
+        
+//         .table.two{
+//             height: 60px;
+//             width: 60px;
+
+//         }
+//         .table.four{
+//             height: 60px;
+//             width: 110px;
+//         }
+//         .table.six{
+//             height: 60px;
+//             width: 160px;
+//         }
+//         .table.eight{
+//             height: 60px;
+//             width: 230px;
+//         }
+
+//         .row{
+//             display: flex;
+//             flex-direction: row;
+//         }
+//         .row.sec{
+//             flex-direction: row-reverse;
+//         }
+
+
+//       }
+
+
+//       .input-plan {
+//         height: 700px;
+//         width: 400px;
+//         border: 2px #dd7230 solid;
+//         border-radius: 10px;
+//         display: flex;
+//         background-color: rgba(44, 40, 40, 0.7);
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         margin-right: 20px;
+        
+//         .submit-btn {
+//             font-weight: 600;
+//             font-size: 15px;
+//             letter-spacing: 0.5px;
+//             text-transform: uppercase;
+//             display: inline-block;
+//             padding: 12px 30px;
+//             border-radius: 50px;
+//             transition: 0.3s;
+//             line-height: 1;
+//             color: black;
+//             background-color: transparent;
+//             border: 2px solid #dd7230;
+//         }
+  
+//         h1 {
+//           color:black;
+//           font-size: 30px;
+//         }
+//         mat-form-field{
+//             width: 350px;
+        
+            
+//         }
+        
+//         button{
+//             margin-top: 50px;
+//             height: 70px;
+//             width: 150px;
+           
+//         }
+
+
+//       }
+      
+//     }
+//     button.A{
+//         background-color: red;
+//     }
+
+//     button.B{
+//         background-color: blue;
+//     }
+// }
+// /// **changing the color of the material form**  ///
+// ::ng-deep .mat-focused .mat-form-field-label {
+//     /*change color of label*/
+//     color: #dd7230 !important;
+//    }
+  
+//    ::ng-deep.mat-form-field-underline {
+//     /*change color of underline*/
+//     background-color: #dd7230 !important;
+//   } 
+  
+//   ::ng-deep.mat-form-field-ripple {
+//    /*change color of underline when focused*/
+//    background-color: #dd7230 !important;;
+//   }

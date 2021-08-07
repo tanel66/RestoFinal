@@ -1,0 +1,24 @@
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center navbar-expand-lg">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Metsaresto</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo me-auto me-lg-0"><img src="/assets/restaurant-sign-pdv.svg" alt="" class="img-fluid"></a>
+      <button class="navbar-toggler" type="button"
+      (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav id="navbar" class="collapse navbar-collapse navbar justify-content-end"
+      [ngClass]="{'show': navbarOpen }">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li><a class="nav-link scrollto active" routerLink="/home">Home</a></li>
+          <li><a class="nav-link scrollto" routerLink="/about">About</a></li>
+          <li><a class="nav-link scrollto" routerLink="/menu">Menu</a></li>
+          <li><a class="nav-link scrollto" routerLink="/chefs">Chefs</a></li>
+          <li><a class="nav-link scrollto" routerLink="/contact">Contact</a></li>
+        </ul>
+        
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->

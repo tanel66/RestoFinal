@@ -1,0 +1,27 @@
+<h1 mat-dialog-title>Do you want to reserve this table?</h1>
+
+<div mat-dialog-content>If you click on Reserve then this table is reserved for You!</div>
+
+<mat-form-field class="example-full-width" appearance="fill">
+	<mat-label>Your Name</mat-label>
+
+	<input matInput placeholder="Name" [formControl]="nameControl">
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+	<mat-label>Choose a date</mat-label>
+
+	<input matInput [matDatepicker]="picker" [formControl]="dateControl">
+
+	<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+
+	<mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+<div mat-dialog-actions>
+	<button mat-button mat-dialog-close>Close</button>
+
+	<button mat-button mat-dialog-close (click)="onReserveClick()">Reserve</button>
+
+	<button mat-button mat-dialog-close (click)="onUnReserveClick()">UnReserve</button>
+</div>
