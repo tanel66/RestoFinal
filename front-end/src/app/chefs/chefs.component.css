@@ -1,0 +1,149 @@
+.chefs {
+  background: url("https://cdn.pixabay.com/photo/2017/06/06/22/46/mediterranean-cuisine-2378758_960_720.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+.chefs::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9;
+}
+
+.section-title {
+  padding: 100px 0 50px 0;
+}
+
+.chefs .container {
+  position: relative;
+  z-index: 10;
+}
+
+.chefs .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.chefs .member .pic {
+  overflow: hidden;
+  height: 450px;
+  width: 100%;
+}
+
+.chefs .member .member-info {
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 0;
+  color: #433f39;
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.member:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.chefs .member h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #6c665c;
+  position: relative;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.chefs .member h4::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #ffcf88;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.chefs .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.chefs .member .social {
+  margin-top: 15px;
+}
+
+.chefs .member .social a {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #dd7230;
+}
+
+.chefs .member .social a:hover {
+  color: #dd7230;
+}
+
+.chefs .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .chefs .member {
+    margin-bottom: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .chefs {
+    background-attachment: fixed;
+  }
+}
+
+h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: letters 9s steps(80, end);
+          animation: letters 9s steps(80, end);
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+@-webkit-keyframes letters {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes letters {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=chefs.component.css.map */

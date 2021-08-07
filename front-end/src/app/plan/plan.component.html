@@ -1,0 +1,97 @@
+<div
+  class="homepage-container plan-container"
+  style="
+    background-image: url('https://images.unsplash.com/photo-1477747219299-60f95c811fef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); 
+    background-size: cover; padding-top: 150px;">
+<div class="city-container">
+  <h1>Pick a table with a city view</h1>
+
+  <div class="tables-container first">
+    <ng-container *ngFor="let table of cityTablesRowOne">
+      <app-table [table]="table"></app-table>
+    </ng-container>
+  </div>
+
+  <div class="tables-container second">
+    <ng-container *ngFor="let table of cityTablesRowTwo">
+      <app-table [table]="table"></app-table>
+    </ng-container>
+  </div>
+
+  <div class="tables-container third">
+    <ng-container *ngFor="let table of cityTablesRowThree">
+      <app-table [table]="table"></app-table>
+    </ng-container>
+  </div>
+</div>
+
+<div class="beach-container">
+  <h1>Pick a table with a beach view</h1>
+
+  <div class="tables-container fourth">
+    <ng-container *ngFor="let table of beachTablesRowOne">
+      <app-table [table]="table"></app-table>
+    </ng-container>
+  </div>
+</div>
+
+  <!-- <div class="input-plan">
+    <mat-form-field appearance="legacy" color="warn">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="legacy" color="warn">
+      <mat-label>Your Name</mat-label>
+      <input matInput />
+    </mat-form-field>
+
+    <mat-form-field appearance="legacy" color="warn">
+      <mat-label>Your Phone number</mat-label>
+      <input matInput />
+    </mat-form-field>
+
+    <mat-form-field appearance="legacy" color="warn">
+      <mat-label>Your email</mat-label>
+      <input matInput />
+    </mat-form-field>
+
+    <mat-form-field appearance="legacy" color="warn">
+      <mat-label>Additional info</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+
+    <button class="submit-btn" (click)="alertMe()">Submit</button>
+
+    <button class="A" (click)="clickEvent()" [ngClass]="status ? 'A' : 'B'">
+      Some content
+    </button>
+  </div>
+
+  <div class="reservation-plan">
+    <div class="table-container">
+      <div class="row">
+        <div class="table six" id="tab1" onClick="reply_click(this.id)"></div>
+        <div class="table two" id="tab2"></div>
+        <div class="table two" id="tab3"></div>
+        <div class="table four" id="tab4"></div>
+      </div>
+
+      <div class="row sec">
+        <div class="table four" id="tab5"></div>
+        <div class="table eight occupied" id="tab6"></div>
+        <div class="table four" id="tab7"></div>
+      </div>
+
+      <div class="row">
+        <div class="table four" id="tab8"></div>
+        <div class="table two" id="tab9"></div>
+        <div class="table two" id="tab10"></div>
+        <div class="table six" id="tab11"></div>
+        <div class="table two" id="tab12"></div>
+      </div>
+    </div>
+  </div> -->
+
