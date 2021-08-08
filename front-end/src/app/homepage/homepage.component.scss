@@ -5,6 +5,10 @@
   background-size: cover;
   position: relative;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+   
 }
 
 #hero:before {
