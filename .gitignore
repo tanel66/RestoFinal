@@ -9,7 +9,7 @@
 
 # dependencies
 /node_modules
-C:\Users\PC\Downloads\RestoFinal-main\RestoFinal-main\config/
+config/config.env
 
 # profiling files
 chrome-profiler-events*.json
