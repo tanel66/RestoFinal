@@ -14,12 +14,23 @@
 		border: solid 1px #000000;
 		border-radius: 15px;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		p {
+			display: none;
+		}
 
 		&.taken {
-			background-color: rgb(255, 38, 0);
-			
+			background-color:  #FF2600;
+			opacity: 0.8;
+			p {
+				display: block;
+
+			}
+			h3 {
+				font-size: 20px;
+			}
 		}
 	}
 	.table:hover {
