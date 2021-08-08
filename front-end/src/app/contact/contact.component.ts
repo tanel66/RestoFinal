@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+ 
+  constructor() { 
+  }
 
-  constructor() { }
-
+  alertMe(){
+    alert("Sorry, we are not a real restaurant (yet)! ")
+  }
+  
   ngOnInit(): void {
   }
 
