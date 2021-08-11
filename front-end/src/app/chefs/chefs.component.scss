@@ -36,8 +36,9 @@
   }
   
   .chefs .member .member-info {
+
     position: absolute;
-    bottom: -80px;
+    bottom: -150px;
     left: 20px;
     right: 20px;
     background: #fff;
@@ -46,6 +47,7 @@
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     transition: transform .5s ease-in-out;
+    border-radius:10px
   }
   .member:hover  {
       transform: scale(1.2);
@@ -115,6 +117,15 @@
  } 
  p {
    color: white
+ }
+
+ h3.intro{
+   margin-left: 10px;
+   margin-right: 10px;
+  margin-bottom: 10px;
+
+  color: #0e0601;
+  font-size: 15px;
  }
 
  @keyframes letters {
