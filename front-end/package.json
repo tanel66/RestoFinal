@@ -1,12 +1,19 @@
 {
   "name": "resto-app",
   "version": "0.0.0",
+  "engines": {
+    "node": "v12.20.0",
+    "npm": "6.14.8"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "start": "node server.js",
+    "dev": "ng serve",
+    "build": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "watch": "ng build --watch --configuration development"
   },
   "private": true,
   "dependencies": {

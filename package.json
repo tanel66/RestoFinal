@@ -9,8 +9,9 @@
   "main": "server.js",
   "scripts": {
     "start": "concurrently \"node server.js\" \"npm run start-front-end\"",
-    "start-front-end": "cd ./front-end && ng serve",
-    "dev": "SET NODE_ENV=development&& nodemon server.js",
+    "dev": "concurrently \"node server.js\" \"npm run start-front-end-dev\"",
+    "start-front-end": "cd ./front-end && node server.js",
+    "start-front-end-dev": "cd ./front-end && ng serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tanel Tumanov",
